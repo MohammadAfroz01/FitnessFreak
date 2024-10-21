@@ -427,11 +427,11 @@ a:hover{
       display: flex;
       justify-content: center;
       padding: 5px 0;
-      background-color: #000; /* Ensure the navbar has a clear background */
+      background-color: #000; 
   }
 
   .nav_links {
-      display: flex;  /* Force horizontal layout */
+      display: flex;  
       justify-content: space-around;
       list-style-type: none;
       width: 100%;
@@ -440,55 +440,57 @@ a:hover{
   }
 
   .nav_links li {
-      margin: 0 5px;  /* Reduced space between items */
+      margin: 0 5px;  
   }
 
   .nav_links li a {
-      font-size: 14px;  /* Smaller font for mobile */
-      padding: 8px 5px;  /* Compressed padding */
+      font-size: 14px;  
+      padding: 8px 5px;  
       text-align: center;
   }
 
   /* Fix for the Join Now button */
   button {
       font-size: 14px;
-      padding: 8px 12px;  /* Adjusted padding */
+      padding: 8px 12px;  
       margin-top: 5px;
   }
 
   /* Hero Image & Text adjustments */
   .hero-image {
-      height: 250px;  /* Reduced height for mobile */
+      height: 250px;  
       background-size: cover;
   }
 
   .hero-text {
-      font-size: 25px;  /* Smaller hero text */
+      font-size: 25px;  
   }
 
   /* Footer Adjustments for Mobile */
   .container-footer {
-      flex-direction: column;  /* Align footer items in a column */
+      flex-direction: column;  
       width: 100%;
-      padding: 10px;  /* Reduce footer padding */
+      padding: 10px;  
+      align-items: center;
   }
 
   .footer-content {
-      width: 100%;  /* Full width for each footer section */
-      margin-bottom: 15px;  /* Space between sections */
+      width: 100%;  
+      margin-bottom: 15px;  
   }
 
   .footer-content p {
-      font-size: 14px;  /* Smaller font for mobile */
+      font-size: 14px;  
       padding: 5px;
       width: 100%;
+      text-align: center;
   }
 
   /* Compress the bottom bar */
   .bottom-bar {
       padding: 5px;
       margin-top: 20px;
-      font-size: 14px;  /* Smaller font for mobile */
+      font-size: 14px;  
   }
 
   /* Reduce social icons size */
