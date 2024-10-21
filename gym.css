@@ -412,101 +412,110 @@ a:hover{
       margin: 5px;
   }
 }
-/* Mobile view adjustments */
+
+/* General mobile view adjustments */
 @media (max-width: 768px) {
-    /* General body and container adjustments */
-    body {
-        padding: 10px;
-        font-size: 14px;
-    }
+  /* Header and Navbar adjustments */
+  header {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 0;
+  }
 
-    /* Header adjustments */
-    header {
-        flex-direction: column;
-        padding: 10px 0;
-        align-items: center;
-    }
+  /* Horizontal Navbar - this ensures it is horizontal on mobile */
+  .navbar {
+      display: flex;
+      justify-content: center;
+      padding: 5px 0;
+      background-color: #000; /* Ensure the navbar has a clear background */
+  }
 
-    .navbar {
-        width: 100%;
-    }
+  .nav_links {
+      display: flex;  /* Force horizontal layout */
+      justify-content: space-around;
+      list-style-type: none;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+  }
 
-    .nav_links li {
-        display: block;
-        text-align: center;
-        margin: 10px 0;
-    }
+  .nav_links li {
+      margin: 0 5px;  /* Reduced space between items */
+  }
 
-    /* Hero section adjustments */
-    .hero-image {
-        height: 300px;
-        background-position: center;
-    }
+  .nav_links li a {
+      font-size: 14px;  /* Smaller font for mobile */
+      padding: 8px 5px;  /* Compressed padding */
+      text-align: center;
+  }
 
-    .hero-text {
-        font-size: 28px; /* Smaller text for mobile */
-    }
+  /* Fix for the Join Now button */
+  button {
+      font-size: 14px;
+      padding: 8px 12px;  /* Adjusted padding */
+      margin-top: 5px;
+  }
 
-    /* About Us adjustments */
-    #about-us {
-        flex-direction: column;
-        padding: 20px 0;
-    }
+  /* Hero Image & Text adjustments */
+  .hero-image {
+      height: 250px;  /* Reduced height for mobile */
+      background-size: cover;
+  }
 
-    #about-us img {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+  .hero-text {
+      font-size: 25px;  /* Smaller hero text */
+  }
 
-    /* Services adjustments */
-    .section-content {
-        flex-direction: column;
-        align-items: center;
-    }
+  /* Footer Adjustments for Mobile */
+  .container-footer {
+      flex-direction: column;  /* Align footer items in a column */
+      width: 100%;
+      padding: 10px;  /* Reduce footer padding */
+  }
 
-    .content-block {
-        width: 90%;
-        margin: 10px 0;
-    }
+  .footer-content {
+      width: 100%;  /* Full width for each footer section */
+      margin-bottom: 15px;  /* Space between sections */
+  }
 
-    /* Footer adjustments */
-    .container-footer {
-        flex-direction: column;
-        align-items: center;
-    }
+  .footer-content p {
+      font-size: 14px;  /* Smaller font for mobile */
+      padding: 5px;
+      width: 100%;
+  }
 
-    .footer-content p {
-        width: 100%;
-        text-align: center;
-    }
+  /* Compress the bottom bar */
+  .bottom-bar {
+      padding: 5px;
+      margin-top: 20px;
+      font-size: 14px;  /* Smaller font for mobile */
+  }
 
-    .social-icons {
-        display: flex;
-        justify-content: center;
-    }
+  /* Reduce social icons size */
+  .social-icons i {
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+}
 
-    /* Adjust block elements */
-    .block, .membership-blocks {
-        width: 90%;
-        margin: 15px auto;
-    }
+/* Extra small mobile view (less than 576px width) */
+@media (max-width: 576px) {
+  /* Further compression for smaller devices */
+  .nav_links li a {
+      font-size: 12px;
+      padding: 6px 2px;
+  }
 
-    /* Text scaling */
-    h2, h3 {
-        font-size: 1.2em;
-    }
+  button {
+      font-size: 12px;
+      padding: 6px 8px;
+  }
 
-    button {
-        font-size: 14px;
-        padding: 7px 20px;
-    }
+  .hero-text {
+      font-size: 20px;
+  }
 
-    p {
-        font-size: 14px;
-    }
-
-    .btn {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
+  .footer-content p {
+      font-size: 12px;
+  }
 }
