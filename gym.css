@@ -412,5 +412,112 @@ a:hover{
       margin: 5px;
   }
 }
+/* For mobile screens */
+@media (max-width: 480px) {
+    /* Adjust general body content for smaller screens */
+    body {
+        padding: 10px;
+    }
+
+    /* Adjust the header and navbar for mobile */
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .nav_links {
+        text-align: center;
+    }
+
+    .nav_links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Adjust hero image and text for mobile */
+    .hero-image {
+        height: 300px; /* Reduce height for mobile */
+    }
+
+    .hero-text {
+        font-size: 24px; /* Adjust font size */
+    }
+
+    /* About Us Section */
+    #about-us {
+        flex-direction: column;
+    }
+
+    #about-us img {
+        width: 100%; /* Make image full width on mobile */
+        height: auto;
+    }
+
+    /* Services Section */
+    .section-content, .membership-blocks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-block, .block {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    /* Footer section for mobile */
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content, .footer-content-3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-content p {
+        width: 90%; /* Ensure proper text wrapping */
+        margin: auto;
+    }
+
+    .social-icons li {
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    /* Button and text scaling */
+    button {
+        padding: 7px 20px;
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    /* Adjust block elements */
+    .content-block img {
+        width: 100%;
+        height: auto;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
 
 
