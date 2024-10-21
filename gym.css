@@ -412,105 +412,97 @@ a:hover{
       margin: 5px;
   }
 }
-/* For mobile screens */
-@media (max-width: 480px) {
-    /* Adjust general body content for smaller screens */
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    /* General body and container adjustments */
     body {
         padding: 10px;
+        font-size: 14px;
     }
 
-    /* Adjust the header and navbar for mobile */
+    /* Header adjustments */
     header {
         flex-direction: column;
-        padding: 10px;
+        padding: 10px 0;
+        align-items: center;
     }
 
     .navbar {
         width: 100%;
     }
 
-    .nav_links {
-        text-align: center;
-    }
-
     .nav_links li {
         display: block;
+        text-align: center;
         margin: 10px 0;
     }
 
-    /* Adjust hero image and text for mobile */
+    /* Hero section adjustments */
     .hero-image {
-        height: 300px; /* Reduce height for mobile */
+        height: 300px;
+        background-position: center;
     }
 
     .hero-text {
-        font-size: 24px; /* Adjust font size */
+        font-size: 28px; /* Smaller text for mobile */
     }
 
-    /* About Us Section */
+    /* About Us adjustments */
     #about-us {
         flex-direction: column;
+        padding: 20px 0;
     }
 
     #about-us img {
-        width: 100%; /* Make image full width on mobile */
-        height: auto;
+        width: 100%;
+        margin-bottom: 20px;
     }
 
-    /* Services Section */
-    .section-content, .membership-blocks {
+    /* Services adjustments */
+    .section-content {
         flex-direction: column;
         align-items: center;
     }
 
-    .content-block, .block {
+    .content-block {
         width: 90%;
         margin: 10px 0;
     }
 
-    /* Footer section for mobile */
+    /* Footer adjustments */
     .container-footer {
         flex-direction: column;
         align-items: center;
     }
 
-    .footer-content, .footer-content-3 {
+    .footer-content p {
         width: 100%;
         text-align: center;
     }
 
-    .footer-content p {
-        width: 90%; /* Ensure proper text wrapping */
-        margin: auto;
+    .social-icons {
+        display: flex;
+        justify-content: center;
     }
 
-    .social-icons li {
-        padding: 5px;
-        margin-bottom: 10px;
+    /* Adjust block elements */
+    .block, .membership-blocks {
+        width: 90%;
+        margin: 15px auto;
     }
 
-    /* Button and text scaling */
-    button {
-        padding: 7px 20px;
-        font-size: 14px;
-    }
-
-    h2 {
-        font-size: 1.5em;
-    }
-
-    h3 {
+    /* Text scaling */
+    h2, h3 {
         font-size: 1.2em;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 7px 20px;
     }
 
     p {
         font-size: 14px;
-    }
-
-    /* Adjust block elements */
-    .content-block img {
-        width: 100%;
-        height: auto;
     }
 
     .btn {
@@ -518,6 +510,3 @@ a:hover{
         padding: 8px 16px;
     }
 }
-
-
-
